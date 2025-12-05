@@ -1,30 +1,18 @@
 <html>
-    <head>
-        <title>
-            JavaScript Arrays
-        </title>
-    </head>
     <body>
-        <h2> Cool Car</h2>
-        <p id="demo"></p>
-        <img id="carImg">
+        <h2>JavaScript Array Methods</h2>
+        <h2>join() and pop()</h2>
+        <p>The join() method joins array elements into a string and the pop() method removes the last element from an array.</p>
+        <p id="myjoin"></p>
+        <p id="myfirstpop"></p>
+        <p id="mysecondpop"></p>
         <script>
-            var cars = [
-                "Toyota",
-                "Mitsubishi",
-                "Mustang",
-                "Ferrari"
-            ];
-            var output = cars[3];
-
-            var carImages = {
-                "Toyota": "https://tse4.mm.bing.net/th/id/OIP.LaKdJWzaInvL8fCqfoMTfwHaEK?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3",
-                "Mitsubishi": "https://tse4.mm.bing.net/th/id/OIP.0-ljRRZYvqofHYUzvMYgeAHaDm?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3",
-                "Mustang": "https://tse4.mm.bing.net/th/id/OIP.Z-cH4okDicFXUKJFwIY6UQHaCV?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3",
-                "Ferrari": "https://tse1.mm.bing.net/th/id/OIP.Mj6nBUtcAnJLVYsxZgb3fAHaDz?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3"
-            };
-            document.getElementById("demo").innerHTML = output;
-            document.getElementById("carImg").src = carImages[output];
+            var colors = ["Red", "Blue", "Green", "Yellow"];
+            document.getElementById("myjoin").innerHTML = colors.join
+            (" * ");
+            document.getElementById("myfirstpop").innerHTML = colors;
+            colors.pop();
+            document.getElementById("mysecondpop").innerHTML = colors;
         </script>
     </body>
 </html>
