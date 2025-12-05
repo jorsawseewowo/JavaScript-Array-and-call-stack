@@ -7,6 +7,7 @@
     <body>
         <h2> Cool Car</h2>
         <p id="demo"></p>
+        <img id="carImg">
         <script>
             var cars = [
                 "Toyota",
@@ -14,9 +15,16 @@
                 "Mustang",
                 "Ferrari"
             ];
-            document.getElementById("demo").innerHTML = cars[3];
+            var output = cars[3];
+
+            var carImages = {
+                "Toyota": "https://tse4.mm.bing.net/th/id/OIP.LaKdJWzaInvL8fCqfoMTfwHaEK?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3",
+                "Mitsubishi": "https://tse4.mm.bing.net/th/id/OIP.0-ljRRZYvqofHYUzvMYgeAHaDm?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3",
+                "Mustang": "https://tse4.mm.bing.net/th/id/OIP.Z-cH4okDicFXUKJFwIY6UQHaCV?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3",
+                "Ferrari": "https://tse1.mm.bing.net/th/id/OIP.Mj6nBUtcAnJLVYsxZgb3fAHaDz?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3"
+            };
+            document.getElementById("demo").innerHTML = output;
+            document.getElementById("carImg").src = carImages[output];
         </script>
-        <marquee scrollamount="150">
-        <img src="https://tse1.mm.bing.net/th/id/OIP.Mj6nBUtcAnJLVYsxZgb3fAHaDz?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3">
     </body>
 </html>
